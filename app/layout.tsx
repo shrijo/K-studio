@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import { Providers } from "./providers";
+import ThemeSwitcher from "./components/ThemeSwitcher/ThemeSwitcher";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -15,8 +17,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html lang="en" suppressHydrationWarning className={inter.className}>
+      <body className="bg-slate-500 dark:bg-slate-900">
+        <Providers>
+          <ThemeSwitcher />
+          {children}
+        </Providers>
+      </body>
     </html>
   );
 }

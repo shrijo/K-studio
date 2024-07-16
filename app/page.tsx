@@ -15,6 +15,7 @@ export default function Home() {
         className="range-slider"
         min={0}
         max={10}
+        step={0.1}
         value={rangeValue}
         onChange={(e) => setRangeValue(Number(e.target.value))}
       />

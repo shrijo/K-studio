@@ -18,13 +18,9 @@
 
 body {
   -webkit-user-select: none; /* Safari */
-  -moz-user-select: none;    /* Firefox */
-  -ms-user-select: none;     /* Internet Explorer/Edge */
-  user-select: none;         /* Non-prefixed version, currently supported by Chrome, Opera, and Edge */
-}
-
-.content-wrapper{
-  background-color: #1f1f1f;
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently supported by Chrome, Opera, and Edge */
 }
 
 .full-screen-canvas {
@@ -32,7 +28,14 @@ body {
   width: 100vw;
 }
 
-.range-slider{
+.theme-switcher {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  z-index: 100;
+}
+
+.range-slider {
   position: absolute;
   top: 0;
   left: 0;

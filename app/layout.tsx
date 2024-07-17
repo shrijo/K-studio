@@ -18,7 +18,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning className={inter.className}>
-      <body className="bg-slate-500 dark:bg-slate-900">
+      <body className="bg-slate-300 dark:bg-slate-900">
         <Providers>
           <ThemeSwitcher />
           {children}

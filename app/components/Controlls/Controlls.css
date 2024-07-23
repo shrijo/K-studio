@@ -1,0 +1,19 @@
+.controlls-wrapper {
+  display: flex;
+  flex-direction: column;
+  z-index: 1000;
+  background-color: rgba(255, 255, 255, 0.3); /* Semi-transparent white */
+  backdrop-filter: blur(10px); /* Frosted glass effect */
+  border-radius: 5px; /* Optional: adds rounded corners */
+}
+
+h1 {
+  color: white;
+  margin-bottom: 10px;
+}
+
+.controlls-inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}

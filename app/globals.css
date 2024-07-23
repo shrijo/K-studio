@@ -36,13 +36,6 @@ body {
   z-index: 100;
 }
 
-.range-slider {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 10;
-}
-
 @layer utilities {
   .text-balance {
     text-wrap: balance;
